@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div#app .side-bar {
+    display: flex;
+    background-color: #fafbfc;
+    width: 280px;
+    height: 100%;
+    font-size: 15px;
+}
+
+div#app .side-bar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 40px;
+}
+
+div#app .side-bar ul li {
+    margin-bottom: 35px;
+    color: #748599;
+}
+
+div#app .side-bar ul a {
+    text-decoration: none;
+    color: #748599;
+}
+
+div#app .side-bar ul a:hover {
+    color: rgb(132, 0, 255);
+}
+
+div#app .side-bar ul li .num {
+    padding: 1px 5px 1px 5px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+div#app .side-bar ul li img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+div#app .side-bar ul li img.seta {
+    margin-left: 20px;
+    width: 10px;
+}
+
+div#app .wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+div#app .wrapper .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 60px;
+}
+
+div#app .wrapper .menu .side-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    padding: 60px;
+    color: #708296;
+}
+
+div#app .wrapper .side-content img:first-child {
+    width: 18px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+div#app .wrapper .side-content img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+div#app .wrapper .side-content img.seta {
+    width: 12px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+div#app .wrapper .menu .profile {
+    padding: 30px;
+}
+
+div#app .wrapper .banner {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(132, 0, 255);
+    background: url('/assets/banner.jpg') center no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+div#app .wrapper .banner button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 35px 0px 0px;
+    width: 140px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.60);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+div#app .wrapper .banner button img {
+    width: 20px;
+    height: 17px;
+}
+
+div#app .wrapper .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div#app .wrapper .content .card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #f4f7f8;
+    background-color: #ffffff;
+    width: 260px;
+    height: 520px;
+    margin-top: -100px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+div#app .wrapper .content .card p {
+    color: #708296;
+}
+
+div#app .wrapper .content .card .img-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+div#app .wrapper .content .card ul {
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+div#app .wrapper .content .card ul li .orange {
+    color: #faba4d;
+    margin-left: 60px;
+}
+
+div#app .wrapper .content .card ul li .red {
+    color: #ff0000;
+    margin-left: 80px;
+}
+
+div#app .wrapper .content .card ul li .gray {
+    color: #708296;
+    margin-left: 70px;
+}
+
+div#app .wrapper .content .card ul li:first-child {
+    border-top: 2px solid #f4f7f8;
+}
+
+div#app .wrapper .content .card ul li {
+    border-bottom: 2px solid #f4f7f8;
+    padding: 15px;
+    font-size: 15px;
+}
+
+div#app .wrapper .content .card .avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+div#app .wrapper .content .card .camera {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    margin: 115px 0px 0px 90px;
+}
+
+div#app .wrapper .content .card .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#app .wrapper .content .card .description button, input {
+    width: 170px;
+    height: 35px;
+    margin-top: 14px;
+}
+
+div#app .wrapper .content .form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: -100px;
+    border-radius: 5px;
+    border: 2px solid #f4f7f8;
+    flex-wrap: wrap;
+    width: 750px;
+    margin-bottom: 50px;
+}
+
+div#app .wrapper .content .form .head-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    flex-wrap: wrap;
+    color: #708296;
+    border-bottom: 2px solid #f4f7f8;
+}
+
+div#app .wrapper .content .form .head-form ul {
+    display: flex;
+    list-style: none;
+}
+
+div#app .wrapper .content .form .head-form ul li:first-child {
+    color: #552ee5;
+}
+
+div#app .wrapper .content .form .head-form ul li.active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    background: #552ee5;
+}
+
+div#app .wrapper .content .form .head-form ul {
+    display: flex;
+}
+
+div#app .wrapper .content .form .head-form ul li {
+    position: relative;
+    margin-left: 25px;
+}
+
+div#app .wrapper .content .form .body-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#app .wrapper .content .form .body-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+div#app .wrapper .content .form .body-form .input-content {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div#app .wrapper .content .form .body-form input {
+    display: flex;
+    width: 350px;
+    height: 45px;
+    outline-color: #5ba6ec;
+    border: 2px solid #f4f7f8;
+    border-radius: 5px;
+    background-color: #fcfdfe;
+}
+
+div#app .wrapper .content .form .body-form select {
+    display: flex;
+    width: 350px;
+    height: 45px;
+    outline-color: #5ba6ec;
+    border: 2px solid #f4f7f8;
+    border-radius: 5px;
+    background-color: #fcfdfe;
+}
+
+div#app .wrapper .content .form .footer-form {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #f4f7f8;
+    height: 100px;
+    padding-left: 30px;
+}
+
+div#app .wrapper .content .form .footer-form button {
+    background-color: #552ee5;
+    width: 110px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff
+}
